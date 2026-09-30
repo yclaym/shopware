@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;600&display=swap');
+
+// Farben
+$ts-navy: #1b2a4a;
+$ts-navy-dark: #131e36;
+$ts-red: #c8102e;
+$ts-cream: #f7f3ea;
+$ts-gold: #c9a96e;
+$ts-line: #d9d2c3;
+
+// Überschriften im Trikot-Stil
+h1, h2, h3, h4,
+.product-name,
+.main-navigation-link-text {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+// Top-Bar (Währung / Sprache) lesbar machen
+.top-bar {
+  background-color: $ts-navy;
+
+  .top-bar-nav-btn,
+  .top-bar-nav-text {
+    color: $ts-cream;
+  }
+}
+
+// Header wie eine Anzeigetafel
+.header-main {
+  background-color: $ts-navy;
+  border-bottom: 4px solid $ts-red;
+
+  .header-row {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  // Logo: schwarzen Hintergrund des Bildes ausblenden
+  .header-logo-main-img {
+    max-height: 90px;
+    width: auto;
+    mix-blend-mode: screen;
+
+    @include media-breakpoint-down(md) {
+      max-height: 60px;
+    }
+  }
+
+  // Suchfeld
+  .header-search-input {
+    background-color: #ffffff;
+    border-color: $ts-line;
+    border-radius: 2px;
+  }
+
+  .header-search-btn {
+    background-color: $ts-red;
+    border-color: $ts-red;
+    color: #ffffff;
+  }
+
+  // Konto- und Warenkorb-Icons
+  .header-actions-btn,
+  .header-cart-total {
+    color: $ts-cream;
+  }
+}
+
+// Navigation
+.nav-main {
+  background-color: $ts-cream;
+  border-bottom: 1px solid $ts-line;
+}
+
+.main-navigation-link:hover .main-navigation-link-text {
+  color: $ts-red;
+}
+
+// Produktkacheln wie Sammelkarten
+.product-box {
+  background-color: #ffffff;
+  border: 1px solid $ts-line;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(27, 42, 74, 0.15);
+  }
+}
+
+.product-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.05rem;
+  color: $ts-navy;
+}
+
+// Kaufen-Button
+.btn-buy {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+// Footer
+.footer-main {
+  background-color: $ts-navy;
+  color: $ts-cream;
+
+  a,
+  .footer-column-headline {
+    color: $ts-cream;
+  }
+}
+
+// Unterer Footer-Streifen (MwSt-Hinweis, Copyright)
+// !important nötig, weil Shopware dort

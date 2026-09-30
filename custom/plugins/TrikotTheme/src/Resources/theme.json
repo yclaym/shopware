@@ -1,0 +1,34 @@
+{
+  "name": "TrikotTheme",
+  "author": "Shopware AG",
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@TrikotTheme"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/trikot-theme/trikot-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+  "fields": {
+    "sw-color-brand-primary": { "value": "#1b2a4a" },
+    "sw-color-brand-secondary": { "value": "#c8102e" },
+    "sw-color-buy-button": { "value": "#c8102e" },
+    "sw-color-price": { "value": "#1b2a4a" },
+    "sw-background-color": { "value": "#f7f3ea" },
+    "sw-border-radius-default": { "value": "2px" },
+    "sw-font-family-base": { "value": "'Inter', sans-serif" },
+    "sw-font-family-headline": { "value": "'Oswald', sans-serif" }
+  }
+}
+}

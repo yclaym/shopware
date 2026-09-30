@@ -1,0 +1,21 @@
+{
+  "name": "custom/trikot-theme",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "~6.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TrikotTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "TrikotTheme\\TrikotTheme",
+    "label": {
+      "de-DE": "Theme TrikotTheme plugin",
+      "en-GB": "Theme TrikotTheme plugin"
+    }
+  }
+}
